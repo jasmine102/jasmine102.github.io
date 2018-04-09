@@ -9,14 +9,14 @@
 <meta name="description" content="网络营销|线上传媒|微信">
 <meta name="keywords" content="SEO,竞价">
 <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://www.yamakuchi.top/about/index.html">
+<meta property="og:title" content="categories">
+<meta property="og:url" content="http://www.yamakuchi.top/categories/index.html">
 <meta property="og:site_name" content="晓峰IT营销">
 <meta property="og:description" content="网络营销|线上传媒|微信">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-07T14:06:00.697Z">
+<meta property="og:updated_time" content="2018-04-09T16:09:12.737Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
+<meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="网络营销|线上传媒|微信">
 
 
@@ -207,6 +207,17 @@
         </span>
         
         
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
     </div>
     
     <div class="toc-ref">
@@ -250,6 +261,26 @@
     </p>
 </div>
 
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="/css/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: '',
+            clientSecret: '',
+            repo: 'yelog.github.io',
+            owner: 'yelog',
+            admin: ['yelog'],
+            id: location.pathname,
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
 
 
 
